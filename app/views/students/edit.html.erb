@@ -1,0 +1,9 @@
+<%= form_for(@student) do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %> <br>
+    <%= f.label :age %>
+    <%= f.number_field :age %> <br>
+    <%= f.label :school %>
+    <%= f.collection_select :school_id, @schools, :id, :name, prompt: true %> <br>
+    <%= f.submit %>
+<% end %>    

@@ -1,0 +1,7 @@
+<h1>Contact us at <%= @school.name %>:</h1>
+<%= form_tag support_post_path do %>
+    Name: <%= text_field_tag :name %><br>
+    Email: <%= text_field_tag :email %><br>
+    Comments: <%= text_area_tag :comment %><br>
+    <%= submit_tag "Submit Complaint" %>
+<% end %>
